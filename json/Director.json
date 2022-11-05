@@ -1,0 +1,109 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "이석훈",
+            "like": 0,
+            "refer": [1, 2, 3],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F101%2F201406111559398321.jpg&type=u111_139&quality=95"
+        },
+        {
+            "id": 2,
+            "name": "장유정",
+            "like": 1,
+            "refer": [4, 5],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201703%2F2017033022594076.png&type=u111_139&quality=95"
+        },
+        {
+            "id": 3,
+            "name": "최국희",
+            "like": 2,
+            "refer": [3, 15],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202008%2F20200810180357154.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 4,
+            "name": "김홍선",
+            "like": 3,
+            "refer": [2, 5],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F109%2F201411041440218781.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 5,
+            "name": "이소현",
+            "like": 4,
+            "refer": [4, 6],
+            "imageURL": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001070%2FPM107018_172451_000.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 6,
+            "name": "이정재",
+            "like": 5,
+            "refer": [6,10],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F42%2F201812191840306281.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 7,
+            "name": "한재림",
+            "like": 6,
+            "refer": [7, 15],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202111%2F20211117163010656.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 8,
+            "name": "이연우",
+            "like": 7,
+            "refer": [8, 12],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202010%2F20201014155017229.jpg&type=u120_150&quality=95"
+        }  ,
+        {
+            "id": 9,
+            "name": "이석재",
+            "like": 8,
+            "refer": [1, 9],
+            "imageURL": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000004613%2FPM461394_135455_000.png&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 10,
+            "name":"홍길동",
+            "like": 9,
+            "refer": [2, 6],
+            "imageURL": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000004613%2FPM461394_135455_000.png&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 11,
+            "name": "sams",
+            "like": 0,
+            "refer": [3],
+            "imageURL": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000439%2F00000043942-t.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 12,
+            "name": "박규태",
+            "like": 0,
+            "refer": [5],
+            "imageURL": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000439%2F00000043942-t.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 13,
+            "name": "정세교",
+            "like": 0,
+            "refer": [13],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F27%2F201904041112284651.jpg&type=u111_139&quality=95"
+        }  ,
+        {
+            "id": 14,
+            "name": "이일형",
+            "like": 0,
+            "refer": [14, 15],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F32%2F202207151341298671.jpg&type=u120_150&quality=95"
+        }  ,
+        {
+            "id": 15,
+            "name": "박찬욱",
+            "like": 0,
+            "refer": [4, 8],
+            "imageURL": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F30%2F201405092025014301.jpg&type=u120_150&quality=95"
+        }    
+    ]
+}

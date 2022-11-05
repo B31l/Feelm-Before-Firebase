@@ -1,0 +1,65 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": {
+                "en": "Netfilx",
+                "ko": "넷플릭스"
+            },
+            "like": 22828,
+            "refer": [1, 2, 3],
+            "iconURL": "https://play-lh.googleusercontent.com/bLa8CrWrVqw2q9U2beRVUJK5fN-ZgtmVdPZdvkEn3BWe7AeDGAsk_NQNFrK7tIkR8QJ3=s48-rw"
+        },
+        {
+            "id": 2,
+            "name": {
+                "en": "Watcha",
+                "ko": "왓챠"
+            },
+            "like": 9090,
+            "refer": [1, 2, 3],
+            "iconURL": "https://play-lh.googleusercontent.com/vAkKvTtE8kdb0MWWxOVaqYVf0_suB-WMnfCR1MslBsGjhI49dAfF1IxcnhtpL3PnjVY=s48-rw"
+        },
+        {
+            "id": 3,
+            "name": {
+                "en": "Disney+",
+                "ko": "디즈니+"
+            },
+            "like": 19874,
+            "refer": [1, 2, 3],
+            "iconURL": "https://play-lh.googleusercontent.com/xoGGYH2LgLibLDBoxMg-ZE16b-RNfITw_OgXBWRAPin2FZY4FGB9QKBYApR-0rSCkQ=s48-rw"
+        },
+        {
+            "id": 4,
+            "name": {
+                "en": "Tving",
+                "ko": "티빙"
+            },
+            "like": 0,
+            "refer": [1, 2, 3],
+            "iconURL": "https://play-lh.googleusercontent.com/eG3T5rqaV3ifl3MKV0fMi4V161wdhghpmqOMq-KYXOCN7Qy98yZhSsIj1gUBQ6YQqRg=s48-rw"
+        },
+        {
+            "id": 5,
+            "name": {
+                "en": "Wavve",
+                "ko": "웨이브"
+            },
+            "like": 0,
+            "refer": [1, 4, 5],
+            "iconURL": "https://play-lh.googleusercontent.com/7cuI7bdCeZbmc9anRXqpmxZPH92t5NEEbhTnj5by6skhZK_dlUg9kx--gqtLf-8c2K12=s48-rw"
+        },
+        {
+            "id": 6,
+            "name": {
+                "en": "Youtube Premium",
+                "ko": "유튜브 프리미엄"
+            },
+            "like": 0,
+            "refer": [1, 4, 5],
+            "iconURL": "https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s48-rw"
+
+        }
+    ]
+}
