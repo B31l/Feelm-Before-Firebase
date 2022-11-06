@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     backgroundColor: 'white',
     borderRadius: 8,
+    elevation: 5,
   },
   profileImageWrapper: {
     width: 120,

@@ -18,7 +18,7 @@ function OttTab() {
       />
       <GoSearch color="white" />
       <MyTabBackground
-        imageURL="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+        imageURL="https://img.freepik.com/premium-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?w=740"
         opacity={0.5}
         height={144}
       />
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#eee',
   },
   scrollView: {
-    paddingBottom: 16,
+    marginVertical: 8,
   },
 });
 

@@ -19,7 +19,7 @@ function MainTab() {
     tabBarStyle: {
       height: 40,
       // borderTopWidth: 1,
-      paddingHorizontal: 80,
+      paddingHorizontal: 32,
     },
     tabBarShowLabel: false,
   };
