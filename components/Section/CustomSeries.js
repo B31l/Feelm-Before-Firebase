@@ -44,10 +44,9 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     height: 180,
-    marginTop: 16,
+    marginVertical: 8,
     marginHorizontal: 16,
-    // borderWidth: 1,
-    // borderColor: '#ccc',
+    elevation: 5,
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8,
     backgroundColor: 'white',

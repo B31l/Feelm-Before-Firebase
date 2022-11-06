@@ -19,7 +19,7 @@ function MainTab() {
     tabBarStyle: {
       height: 40,
       // borderTopWidth: 1,
-      paddingHorizontal: 32,
+      paddingHorizontal: 80,
     },
     tabBarShowLabel: false,
   };
@@ -36,18 +36,18 @@ function MainTab() {
       <Tab.Screen
         name="시리즈"
         component={SeriesTab}
-        options={headerOptions('style')}
+        options={headerOptions('tv')}
       />
       <Tab.Screen
         name="OTT" //
         component={OttTab}
-        options={headerOptions('tv')}
+        options={headerOptions('style')}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="커뮤니티"
         component={CommunityTab}
         options={headerOptions('explore')}
-      />
+      /> */}
       <Tab.Screen
         name="보관함"
         component={ArchiveTab}

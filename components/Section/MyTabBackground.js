@@ -23,10 +23,8 @@ function MyTabBacground({
 
 const styles = StyleSheet.create({
   container: {
-    // position: 'absolute',
     width: '100%',
     backgroundColor: 'black',
-    // marginBottom: 160,
   },
   image: {
     width: '100%',

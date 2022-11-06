@@ -40,17 +40,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   imageWrapper: {
-    width: 64,
-    height: 64,
-    marginRight: 8,
-    borderRadius: 16,
+    width: 48,
+    height: 48,
+    marginRight: 12,
     backgroundColor: '#eee',
   },
   image: {
     width: '100%',
     height: '100%',
-    borderWidth: 2,
-    borderRadius: 16,
+    borderWidth: 1,
     borderColor: '#eee',
   },
 });

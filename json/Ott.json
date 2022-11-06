@@ -49,17 +49,6 @@
             "like": 0,
             "refer": [1, 4, 5],
             "iconURL": "https://play-lh.googleusercontent.com/7cuI7bdCeZbmc9anRXqpmxZPH92t5NEEbhTnj5by6skhZK_dlUg9kx--gqtLf-8c2K12=s48-rw"
-        },
-        {
-            "id": 6,
-            "name": {
-                "en": "Youtube Premium",
-                "ko": "유튜브 프리미엄"
-            },
-            "like": 0,
-            "refer": [1, 4, 5],
-            "iconURL": "https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s48-rw"
-
         }
     ]
 }
