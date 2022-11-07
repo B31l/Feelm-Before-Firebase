@@ -1,16 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  ScrollView,
-  FlatList,
-  View,
-  Text,
-  Image,
-  ImageBackground,
-} from 'react-native';
+import {StyleSheet, FlatList, View, Image} from 'react-native';
 
 const OttData = require('../../json/Ott.json').items;
-function OttTabNav() {
+function OttNav() {
   const data = OttData.map(item => item.iconURL);
   const renderItem = ({item}) => (
     <View style={styles.imageWrapper}>
@@ -31,26 +23,22 @@ function OttTabNav() {
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
-    zIndex: 1,
     width: '100%',
-    height: 80,
-    marginTop: 80,
-    marginRight: 40,
-    paddingHorizontal: 16,
+    height: 40,
+    marginLeft: 8,
   },
   imageWrapper: {
-    width: 48,
-    height: 48,
-    marginRight: 12,
+    width: 40,
+    height: 40,
+    marginRight: 8,
+    borderRadius: 4,
     backgroundColor: '#eee',
   },
   image: {
     width: '100%',
     height: '100%',
-    borderWidth: 1,
-    borderColor: '#eee',
+    borderRadius: 4,
   },
 });
 
-export default OttTabNav;
+export default OttNav;

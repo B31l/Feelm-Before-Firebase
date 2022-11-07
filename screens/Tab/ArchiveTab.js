@@ -13,19 +13,14 @@ import BlockTitle from '../../components/Section/BlockTitle';
 import ChickenEggAndIcon from '../../components/Section/ChickenEggAndICon';
 
 function ArchiveTab() {
+  const background = {
+    uri: 'https://img.freepik.com/free-vector/grey-geometric-background-design_1055-3183.jpg?w=740&t=st=1667803093~exp=1667803693~hmac=efdbd10b9842aafa83739e696c0f0d8c866ac64f5773c097af67ca796eef8339',
+  };
   return (
     <>
-      <ScreenHeader
-        title="보관함"
-        align={false}
-        backgroundColor="transparent"
-      />
+      <ScreenHeader title="보관함" backgroundColor="transparent" />
       <GoSearch />
-      <ImageBackground
-        style={styles.container}
-        source={{
-          uri: 'https://as1.ftcdn.net/v2/jpg/02/65/60/74/1000_F_265607460_VhXH0279jWzfZjDZO2mw1sEzb5ZsYrjt.jpg',
-        }}>
+      <ImageBackground style={styles.container} source={background}>
         <BlockTitle left="내 영화" right="최근 기록" icon="history" />
         <View style={{...styles.block, height: 160}}>
           <ChickenEggAndIcon

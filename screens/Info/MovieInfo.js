@@ -32,7 +32,7 @@ function MovieInfo({route}) {
               // borderRadius: 80,
               // elevation: 5,
             }}
-            source={{uri: movie.posterImageURL}}
+            source={{uri: movie.imageURL}}
           />
         </View>
         <View
@@ -55,7 +55,7 @@ function MovieInfo({route}) {
                 height: '100%',
                 // elevation: 5,
               }}
-              source={{uri: movie.imageURL}}
+              source={{uri: movie.posterImageURL}}
             />
           </View>
         </View>
@@ -100,7 +100,7 @@ function MovieInfo({route}) {
             <Text>장르 : {movie.tag}</Text>
             <Text>영화 정보 : {movie.summary}</Text>
             <View style={styles.horizontalSeparator} />
-            <DirectorImg propsRefer={movie.director}/>
+            <DirectorImg propsRefer={movie.director} />
             <View style={styles.horizontalSeparator} />
           </View>
           <HorizontalAtorList propsRefer={movie.actor} />

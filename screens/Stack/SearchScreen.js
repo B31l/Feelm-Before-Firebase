@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   result: {
+    alignItems: 'center',
     marginTop: 16,
     flex: 1,
     backgroundColor: 'white',
@@ -74,8 +75,13 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   resultText: {
+    width: '50%',
     marginVertical: 8,
+    paddingBottom: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
     color: 'black',
+    textAlign: 'center',
   },
   noResult: {
     position: 'absolute',

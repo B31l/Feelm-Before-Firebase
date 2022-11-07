@@ -1,9 +1,8 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import NowTab from './Tab/NowTab';
 import SeriesTab from './Tab/SeriesTab';
-import OttTab from './Tab/OttTab';
-import CommunityTab from './Tab/CommunityTab';
 import ArchiveTab from './Tab/ArchiveTab';
 import MyTab from './Tab/MyTab';
 
@@ -18,7 +17,7 @@ function MainTab() {
     },
     tabBarStyle: {
       height: 40,
-      // borderTopWidth: 1,
+      marginTop: -8,
       paddingHorizontal: 32,
     },
     tabBarShowLabel: false,
@@ -35,19 +34,14 @@ function MainTab() {
     <Tab.Navigator initialRouteName="시리즈" screenOptions={screenOptions}>
       <Tab.Screen
         name="시리즈"
-        component={SeriesTab}
+        component={NowTab}
         options={headerOptions('tv')}
       />
       <Tab.Screen
         name="OTT" //
-        component={OttTab}
+        component={SeriesTab}
         options={headerOptions('style')}
       />
-      {/* <Tab.Screen
-        name="커뮤니티"
-        component={CommunityTab}
-        options={headerOptions('explore')}
-      /> */}
       <Tab.Screen
         name="보관함"
         component={ArchiveTab}

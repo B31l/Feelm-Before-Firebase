@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
-function SeriesTabNav({visibility}) {
+function TempNav({visibility}) {
   return (
     <View
       style={{
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SeriesTabNav;
+export default TempNav;
