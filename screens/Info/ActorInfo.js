@@ -2,7 +2,8 @@ import React from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
 import ScreenHeader from '../../components/Header/ScreenHeader';
 import GoBack from '../../components/Button/GoBack';
-// import BeLike from '../../components/Button/BeLike';
+import GoSearch from '../../components/Button/GoSearch';
+import BeLike from '../../components/Button/BeLike';
 import VerticalMovieList from '../../components/List/VerticalMovieList';
 import ChickenEgg from '../../components/Section/ChickenEgg';
 
@@ -17,6 +18,8 @@ function ActorInfo({route}) {
     <>
       <ScreenHeader title={actor.name} />
       <GoBack />
+      <GoSearch />
+      <BeLike />
       {/* <BeLike color={MyData.like.series.includes(actor.id) ? 'red' : '#333'} /> */}
       <View style={styles.container}>
         <View style={{flexDirection: 'row'}}>

@@ -121,7 +121,6 @@ const styles = StyleSheet.create({
   summaryWrapper: {
     borderColor: 'white',
     borderTopWidth: 1,
-    // borderRadius: 8,
     width: 240,
     height: 160,
   },

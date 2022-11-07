@@ -23,23 +23,25 @@ const ActorData = require('../../json/Actor.json').items;
 function HorizontalAtorList({
   propsRefer,
   limit = 999,
-  width = 120,
-  height = 180,
-  margin = [0, 0, 10, 0],
-  padding = [0, 4],
-  borderRadius = 0,
+  width = 64,
+  height = 64,
+  margin = [0, 0, 0, 0],
+  padding = [4, 0],
+  borderRadius = 8,
 }) {
   const navigation = useNavigation();
   const styles = uStyles(width, height, margin, padding, borderRadius);
   const temp = ActorData.filter(item => propsRefer.includes(item.id)); // 전체 데이터
   const data = temp.length >= limit ? temp.slice(0, limit) : temp; // 정제된 데이터
   const renderItem = ({item}) => (
-    <View style={styles.movieUl}>
+    <View>
       <Text>{item.name}</Text>
-      <TouchableOpacity
-        onPress={() => navigation.navigate('ActorInfo', {propsId: item.id})}>
-        <Image style={styles.movieLi} source={{uri: item.imageURL}} />
-      </TouchableOpacity>
+      <View style={styles.movieUl}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('ActorInfo', {propsId: item.id})}>
+          <Image style={styles.movieLi} source={{uri: item.imageURL}} />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 
@@ -48,11 +50,8 @@ function HorizontalAtorList({
       <FlatList
         data={data}
         renderItem={renderItem}
-        keyExtractor={item => item.id}
         horizontal
         showsHorizontalScrollIndicator={false}
-        bounces={true}
-        onEndReachedThreshold={0.6}
       />
     </View>
   );
@@ -61,7 +60,6 @@ function HorizontalAtorList({
 const uStyles = (width, height, margin, padding, borderRadius) =>
   StyleSheet.create({
     container: {
-      height,
       marginTop: margin[0],
       marginRight: margin[1],
       marginBottom: margin[2],
@@ -70,6 +68,7 @@ const uStyles = (width, height, margin, padding, borderRadius) =>
     },
     movieUl: {
       width,
+      height,
       borderRadius,
       marginRight: padding[0],
       marginLeft: padding[1],

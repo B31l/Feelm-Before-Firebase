@@ -2,19 +2,24 @@ import React from 'react';
 import {StyleSheet, View, TexIt, Image} from 'react-native';
 import ScreenHeader from '../../components/Header/ScreenHeader';
 import GoBack from '../../components/Button/GoBack';
+import GoSearch from '../../components/Button/GoSearch';
+import BeLike from '../../components/Button/BeLike';
 import VerticalMovieList from '../../components/List/VerticalMovieList';
 import ChickenEgg from '../../components/Section/ChickenEgg';
 
 const DirectorData = require('../../json/Director.json').items;
 
-
 function DirectorInfo({route}) {
-  const director = DirectorData.filter(item => item.id === route.params.propsId)[0];
+  const director = DirectorData.filter(
+    item => item.id === route.params.propsId,
+  )[0];
 
   return (
     <>
       <ScreenHeader title={director.name} />
       <GoBack />
+      <GoSearch />
+      <BeLike />
       <View style={styles.container}>
         <View style={{flexDirection: 'row'}}>
           <View
@@ -29,7 +34,11 @@ function DirectorInfo({route}) {
             {/* <ChickenEgg width="40%" /> */}
           </View>
           <View style={{...styles.block, flex: 1}}>
-            <ChickenEgg head="작품 수" body={director.refer.length} width="50%" />
+            <ChickenEgg
+              head="작품 수"
+              body={director.refer.length}
+              width="50%"
+            />
             <ChickenEgg head="좋아요 수" body={director.like} width="50%" />
           </View>
         </View>

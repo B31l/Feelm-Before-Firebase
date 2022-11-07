@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     padding: 8,
     borderRadius: 8,
+    zIndex: 5,
   },
   resultText: {
     width: '50%',
@@ -87,6 +88,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     justifyContent: 'center',
     alignItems: 'center',
+    zIndex: 1,
     width: '100%',
     height: '100%',
   },
@@ -95,6 +97,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
     top: 32,
     width: '100%',
+    height: 32,
     paddingLeft: 48,
     paddingRight: 16,
   },

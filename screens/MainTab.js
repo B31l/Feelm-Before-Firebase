@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 function MainTab() {
   const screenOptions = {
     tabBarActiveTintColor: '#4287f5',
-    tabBarInactiveTintColor: '#333',
+    tabBarInactiveTintColor: 'white',
     tabBarLabelStyle: {
       fontSize: 12,
     },
@@ -19,6 +19,7 @@ function MainTab() {
       height: 40,
       marginTop: -8,
       paddingHorizontal: 32,
+      backgroundColor: 'black',
     },
     tabBarShowLabel: false,
   };

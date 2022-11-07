@@ -55,17 +55,16 @@ function ArchiveTab() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 80,
+    marginBottom: 8,
+    backgroundColor: '#eee',
+  },
   ImageBackground: {
     width: '100%',
     height: '100%',
   },
-  container: {
-    flex: 1,
-    // marginTop: 64,
-    paddingTop: 80,
-    backgroundColor: '#eee',
-  },
-
   block: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -74,7 +73,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     marginHorizontal: 16,
     borderRadius: 8,
-    borderWidth: 1,
+    elevation: 5,
   },
 });
 

@@ -19,14 +19,14 @@
             "name": "마블",
             "creator": "Feelm",
             "like": 166,
-            "refer": [1, 5, 9, 11, 15]
+            "refer": [6, 7, 8, 9, 15]
         },
         {
             "id": 3,
             "name": "카 시리즈",
             "creator": "Feelm",
             "like": 51,
-            "refer": [1, 2, 3, 4, 5]
+            "refer": [10, 11, 12, 13, 14]
         },
         {
             "id": 4,

@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import ScreenHeader from '../../components/Header/ScreenHeader';
 import GoBack from '../../components/Button/GoBack';
+import GoSearch from '../../components/Button/GoSearch';
 import BeLike from '../../components/Button/BeLike';
 import VerticalMovieList from '../../components/List/VerticalMovieList';
 import ChickenEgg from '../../components/Section/ChickenEgg';
@@ -17,6 +18,7 @@ function SeriesInfo({route}) {
     <>
       <ScreenHeader title={series.name} />
       <GoBack />
+      <GoSearch />
       <BeLike color={MyData.like.series.includes(series.id) ? 'red' : '#333'} />
       <View style={styles.container}>
         <View style={{...styles.block, flexDirection: 'row'}}>
