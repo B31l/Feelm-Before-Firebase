@@ -1,13 +1,6 @@
 {
     "items": [
         {
-            "id": 0,
-            "name": "상영작",
-            "creator": "Feelm",
-            "like": 0,
-            "refer": [12, 13, 14, 15]
-        },
-        {
             "id": 1,
             "name": "DC코믹스",
             "creator": "Feelm",
