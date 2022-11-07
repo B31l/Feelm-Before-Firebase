@@ -35,7 +35,7 @@ function SearchScreen() {
 
       <GoBack />
       <View style={styles.container}>
-        <View style={styles.result}>
+        <View style={{...styles.result, zIndex: list.length === 0 ? 0 : 1}}>
           <Text
             style={{...styles.resultText, opacity: list.length === 0 ? 0 : 1}}>
             {list.length}건의 검색 결과
@@ -73,7 +73,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     padding: 8,
     borderRadius: 8,
-    zIndex: 5,
   },
   resultText: {
     width: '50%',
@@ -88,7 +87,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 1,
     width: '100%',
     height: '100%',
   },

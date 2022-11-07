@@ -10,7 +10,6 @@ import ChickenEgg from '../../components/Section/ChickenEgg';
 const MyData = require('../../json/My.json');
 const SeriesData = require('../../json/Series.json').items;
 
-/** 시리즈 정보 */
 function SeriesInfo({route}) {
   const series = SeriesData.filter(item => item.id === route.params.propsId)[0];
   console.log(MyData.like.series.includes(series.id));
