@@ -7,7 +7,7 @@ function SearchHeader({
   visibility = true,
   align = true,
   backgroundColor = 'white',
-  color = '#333',
+  color = '#E36537',
   fontSize = 20,
 }) {
   if (visibility) {

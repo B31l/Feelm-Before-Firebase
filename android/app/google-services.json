@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "985454266703",
+    "project_id": "feelm-761e1",
+    "storage_bucket": "feelm-761e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985454266703:android:c9f8b2e037d545cd711d3a",
+        "android_client_info": {
+          "package_name": "com.feelm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985454266703-8l5rrkvlumnpfas63km1ogep2l77ic8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.feelm",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "985454266703-fdvmgbrmgfc6g5tkb9s9104psh4t8l6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDDdhH9kR5xCGitH334luNi5mspgUcmys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985454266703-fdvmgbrmgfc6g5tkb9s9104psh4t8l6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

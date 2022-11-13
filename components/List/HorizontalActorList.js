@@ -20,6 +20,8 @@ const ActorData = require('../../json/Actor.json').items;
  * @param {number[]} padding 포스터 간격 (Right / Left)
  * @param {number} borderRadius 포스터 테두리 곡률
  */
+
+// 수정 완
 function HorizontalAtorList({
   propsRefer,
   limit = 999,
@@ -34,14 +36,14 @@ function HorizontalAtorList({
   const temp = ActorData.filter(item => propsRefer.includes(item.id)); // 전체 데이터
   const data = temp.length >= limit ? temp.slice(0, limit) : temp; // 정제된 데이터
   const renderItem = ({item}) => (
-    <View>
-      <Text>{item.name}</Text>
+    <View style={styles.content}>
       <View style={styles.movieUl}>
         <TouchableOpacity
           onPress={() => navigation.navigate('ActorInfo', {propsId: item.id})}>
           <Image style={styles.movieLi} source={{uri: item.imageURL}} />
         </TouchableOpacity>
       </View>
+      <Text style={styles.text}>{item.name}</Text>
     </View>
   );
 
@@ -73,12 +75,21 @@ const uStyles = (width, height, margin, padding, borderRadius) =>
       marginRight: padding[0],
       marginLeft: padding[1],
     },
+    text: {
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize: 12,
+    },
     movieLi: {
       width: '100%',
       height: '100%',
-      borderRadius,
-      borderWidth: 1,
-      borderColor: '#ccc',
+      // borderRadius,
+      // borderWidth: 1,
+      // borderColor: '#ccc',
+    },
+    content: {
+      justifyContent: 'center',
+      alignItems: 'center',
     },
   });
 

@@ -4,24 +4,24 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import NowTab from './Tab/NowTab';
 import SeriesTab from './Tab/SeriesTab';
 import ArchiveTab from './Tab/ArchiveTab';
-import MyTab from './Tab/MyTab';
 
 const Tab = createBottomTabNavigator();
 
 function MainTab() {
   const screenOptions = {
-    tabBarActiveTintColor: '#4287f5',
-    tabBarInactiveTintColor: 'white',
+    tabBarActiveTintColor: '#FFD63F',
+    tabBarInactiveTintColor: 'gray',
     tabBarLabelStyle: {
       fontSize: 12,
     },
     tabBarStyle: {
-      height: 40,
+      height: 48,
       marginTop: -8,
       paddingHorizontal: 32,
       backgroundColor: 'black',
+      borderTopWidth: 0,
     },
-    tabBarShowLabel: false,
+    // tabBarShowLabel: false,
   };
 
   const headerOptions = iconName => ({
@@ -46,13 +46,13 @@ function MainTab() {
       <Tab.Screen
         name="보관함"
         component={ArchiveTab}
-        options={headerOptions('inventory')}
+        options={headerOptions('person')}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="MY"
         component={MyTab} //
         options={headerOptions('person')}
-      />
+      /> */}
     </Tab.Navigator>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import GoAlertAndSetting from '../Button/GoAlertAndSetting';
 
 function MovieInfoHeader({visibility, title}) {
   if (visibility) {

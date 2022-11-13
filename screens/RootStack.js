@@ -12,36 +12,25 @@ import SeriesInfo from './Info/SeriesInfo';
 
 /* Stack */
 import AlertScreen from './Stack/AlertScreen';
-import LoadingScreen from './Stack/LoadingScreen';
 import SearchScreen from './Stack/SearchScreen';
 import SettingScreen from './Stack/SettingScreen';
+
+/* Sign */
+import SignInScreen from './Stack/SignInScreen';
 
 const Stack = createNativeStackNavigator();
 
 function RootStack() {
-  const headerOptions = {
-    headerTitleStyle: {
-      color: '#4287f5',
-      fontSize: 24,
-      fontWeight: 'bold',
-    },
-    headerStyle: {
-      height: 64,
-      borderBottomWidth: 1,
-      backGroundColor: 'black',
-    },
-  };
-
   return (
     <Stack.Navigator>
+      {/* <Stack.Screen
+        name="SignIn"
+        component={SignInScreen}
+        options={{headerShown: false}}
+      /> */}
       <Stack.Screen
         name="MainTab"
         component={MainTab}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="Loading"
-        component={LoadingScreen}
         options={{headerShown: false}}
       />
 
@@ -79,7 +68,7 @@ function RootStack() {
       <Stack.Screen
         name="SeriesInfo"
         component={SeriesInfo}
-        options={{headerShown: false}} // 이렇게하면 아무 버튼도 없음. 위처럼 하면 버튼 생기니까 타이틀 없애던가 해야댐
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );

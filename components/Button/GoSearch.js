@@ -1,9 +1,10 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-function GoSearch({color = '#333'}) {
+/** 검색 */
+function GoSearch({color = 'white'}) {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
@@ -21,13 +22,13 @@ function GoSearch({color = '#333'}) {
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
     position: 'absolute',
-    top: 28,
+    justifyContent: 'center',
+    top: 48,
     right: 8,
     zIndex: 1,
     width: 32,
-    height: 36,
+    height: 32,
   },
   icon: {
     justifyContent: 'center',

@@ -8,6 +8,7 @@
         "actor": [5, 6, 7],
         "director": [8]
     },
-    "watchedMovie": [],
+    "watchedMovie": [1,2,3,4,5,6,8,9,10],
+    "wantowatch" : [7],
     "customSeries": []
 }

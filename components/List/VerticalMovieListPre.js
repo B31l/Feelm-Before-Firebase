@@ -7,7 +7,6 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-// import {useNavigation} from '@react-navigation/native';
 
 function VerticalMovieList({data, width = 64, height = 64, borderRadius = 8}) {
   // const navigation = useNavigation();

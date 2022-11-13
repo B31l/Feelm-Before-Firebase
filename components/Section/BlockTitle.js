@@ -19,11 +19,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 8,
+    marginBottom: 0,
     marginHorizontal: 24,
   },
   left: {
-    color: 'black',
+    color: 'white',
     fontWeight: 'bold',
   },
   rightWrapper: {

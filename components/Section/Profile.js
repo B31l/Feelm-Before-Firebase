@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
-import EditProfile from '../Button/EditProfile';
-import ProfileMenuLike from './ProfileMenuLike';
 import GoAlertAndSetting from '../Button/GoAlertAndSetting';
-
+import ImageModal from 'react-native-image-modal';
+// 수정 완
+// 행으로 프로필
 const MyData = require('../../json/My.json');
 
 function Profile({visibility, name}) {
@@ -11,7 +11,7 @@ function Profile({visibility, name}) {
     <View style={styles.container}>
       <View
         style={{...styles.profileImageWrapper, opacity: visibility ? 1 : 0}}>
-        <Image
+        <ImageModal
           style={styles.profileImage}
           source={{uri: MyData.profileImageURL}}
         />
@@ -19,13 +19,13 @@ function Profile({visibility, name}) {
       <View style={styles.profileNameWrapper}>
         <Text style={styles.profileName}>{name}</Text>
       </View>
-      <ProfileMenuLike
+      {/* <ProfileMenuLike
         movie={MyData.like.movie.length}
         series={MyData.like.series.length}
         actor={MyData.like.actor.length}
         director={MyData.like.director.length}
-      />
-      <EditProfile />
+      /> */}
+      {/* <EditProfile /> */}
       <View style={styles.isTopWrapper}>
         <GoAlertAndSetting color="white" />
       </View>
@@ -35,42 +35,43 @@ function Profile({visibility, name}) {
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
-    zIndex: 1,
+    flexDirection: 'row',
+    // position: 'absolute',
+    // zIndex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 240,
-    marginTop: 160,
+    height: 160,
+    marginTop: 50,
     marginHorizontal: 16,
-    backgroundColor: 'white',
+    // backgroundColor: 'black',
     borderRadius: 8,
     elevation: 5,
   },
   profileImageWrapper: {
-    width: 120,
-    height: 120,
-    marginTop: -60,
+    width: 100,
+    height: 100,
     backgroundColor: 'white',
     borderRadius: 60,
     borderWidth: 1,
-    borderColor: '#eee',
+    borderColor: 'white',
   },
   profileImage: {
-    width: '100%',
-    height: '100%',
+    width: 100,
+    height: 100,
     borderRadius: 60,
   },
   profileNameWrapper: {
-    width: 320,
+    width: 200,
     height: 80,
-    paddingBottom: 20,
-    justifyContent: 'center',
+    paddingBottom: 24,
+    justifyContent: 'flex-end',
     alignItems: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
   },
   profileName: {
-    color: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
     fontSize: 24,
     fontWeight: 'bold',
   },
@@ -89,20 +90,21 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   editText: {
-    color: 'black',
+    color: 'white',
     fontSize: 12,
     width: 32,
     textAlign: 'center',
   },
   isTopWrapper: {
-    position: 'absolute',
+    // position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center',
     zIndex: 1,
     top: -36,
-    right: -8,
+    left: -8,
     width: 80,
     height: 32,
     flexDirection: 'row',
-    alignItems: 'center',
   },
 });
 

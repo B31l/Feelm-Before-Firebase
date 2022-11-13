@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   sectionBody: {
-    color: 'black',
+    color: 'white',
     fontSize: 24,
     fontWeight: 'bold',
   },

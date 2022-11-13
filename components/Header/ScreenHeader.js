@@ -1,13 +1,12 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 function ScreenHeader({
   title,
   visibility = true,
-  align = true,
-  backgroundColor = 'white',
-  color = '#333',
+  align = false,
+  backgroundColor = 'transparent',
+  color = 'white',
   fontSize = 20,
 }) {
   if (visibility) {
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 1,
     width: '100%',
-    height: 64,
+    height: 80,
     flexDirection: 'row',
     alignItems: 'flex-end',
   },
@@ -38,8 +37,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '100%',
-    height: 36,
-    paddingHorizontal: 24,
+    height: 32,
+    paddingHorizontal: 16,
   },
 });
 

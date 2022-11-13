@@ -19,13 +19,7 @@ const MovieData = require('../../json/Movie.json').items;
  * @param {number} height 포스터 높이
  * @param {number} borderRadius 포스터 테두리 곡률
  */
-function VerticalMovieList({
-  propsRefer,
-  limit = 999,
-  width = 64,
-  height = 64,
-  borderRadius = 8,
-}) {
+function VerticalMovieList({propsRefer, limit, width, height, borderRadius}) {
   const navigation = useNavigation();
   const temp = MovieData.filter(item => propsRefer.includes(item.id)); // 전체 데이터
   const data = temp.length >= limit ? temp.slice(0, limit) : temp; // 정제된 데이터
@@ -35,13 +29,15 @@ function VerticalMovieList({
       onPress={() => navigation.navigate('MovieInfo', {propsId: item.id})}>
       <View style={{...styles.movieUl, width, height, borderRadius}}>
         <Image
-          style={{...styles.movieLi, borderRadius}}
+          style={{...styles.movieLi}}
           source={{uri: item.posterImageURL}}
         />
       </View>
       <View style={{width: '100%'}}>
-        <Text style={{fontSize: 16, color: 'black'}}>{item.name}</Text>
-        <Text style={{fontSize: 12}}>{item.tag.join(' / ')}</Text>
+        <Text style={{fontSize: 16, color: 'white'}}>{item.name}</Text>
+        <Text style={{fontSize: 12, color: 'white'}}>
+          {item.tag.join(' / ')}
+        </Text>
       </View>
     </TouchableOpacity>
   );
@@ -56,6 +52,13 @@ function VerticalMovieList({
     </View>
   );
 }
+
+VerticalMovieList.defaultProps = {
+  limit: 999,
+  width: 64,
+  height: 81,
+  borderRadius: 8,
+};
 
 const styles = StyleSheet.create({
   container: {

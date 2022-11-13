@@ -59,6 +59,7 @@ import VerticalMovieListPre from '../../components/List/VerticalMovieListPre';
 //   );
 // }
 
+// 수정 완
 function SearchScreen() {
   const [text, setText] = useState(''); // 검색 입력
   const [list, setList] = useState([]); // 검색 결과
@@ -79,7 +80,7 @@ function SearchScreen() {
 
   return (
     <>
-      <ScreenHeader backgroundColor="#eee" />
+      <ScreenHeader />
       <View style={styles.textInputWrapper}>
         <TextInput
           style={styles.textInput}
@@ -87,6 +88,7 @@ function SearchScreen() {
             setText(foo);
           }}
           placeholder="제목으로 영화 검색"
+          placeholderTextColor={'#999'}
         />
       </View>
 
@@ -104,7 +106,7 @@ function SearchScreen() {
               }}
             />
           </View>
-          <Text>검색 결과가 없습니다.</Text>
+          <Text style={{color: '#999'}}>검색 결과가 없습니다.</Text>
         </View>
       </View>
     </>
@@ -114,15 +116,15 @@ function SearchScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 64,
-    backgroundColor: '#eee',
-    marginBottom: 16,
+    backgroundColor: '#111',
+    paddingTop: 80,
+    paddingBottom: 16,
   },
   result: {
     alignItems: 'center',
     marginTop: 16,
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: '#272727',
     marginHorizontal: 16,
     padding: 8,
     borderRadius: 8,
@@ -142,11 +144,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: '100%',
+    marginTop: 80,
   },
   textInputWrapper: {
     position: 'absolute',
     zIndex: 1,
-    top: 32,
+    top: 48,
     width: '100%',
     height: 32,
     paddingLeft: 48,
@@ -158,7 +161,8 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
     paddingHorizontal: 8,
     borderRadius: 8,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
+    color: 'white',
   },
   imageWrapper: {
     width: 64,

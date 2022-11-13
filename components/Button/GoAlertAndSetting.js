@@ -2,7 +2,8 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
+// 수정 완
+// Edit포함하도록
 function GoAlertAndSetting({color}) {
   const navigation = useNavigation();
   return (
@@ -21,6 +22,14 @@ function GoAlertAndSetting({color}) {
           size={20}
           color={color}
           onPress={() => navigation.navigate('Setting')}
+        />
+      </View>
+      <View style={styles.icon}>
+        <Icon
+          name="edit"
+          size={20}
+          color={color}
+          onPress={() => navigation.navigate('Edit')}
         />
       </View>
     </>

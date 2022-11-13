@@ -6,7 +6,7 @@ import RootStack from './screens/RootStack';
 /* StatusBar */
 StatusBar.setBackgroundColor('transparent');
 StatusBar.setTranslucent(true);
-StatusBar.setBarStyle('dark-content');
+StatusBar.setBarStyle('light-content');
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Image} from 'react-native';
-
+import LinearGradient from 'react-native-linear-gradient';
+// 수정 완 그라데이션
 function MyTabBacground({
   imageURL,
   visibility = true,
@@ -16,7 +17,11 @@ function MyTabBacground({
         marginBottom,
         opacity: visibility ? 1 : 0,
       }}>
-      <Image source={{uri: imageURL}} style={{...styles.image, opacity}} />
+      <LinearGradient
+        colors={['rgba(255,255,255,0)', 'black']}
+        style={{zIndex: 101, height: 240}} // <- Image 컴포넌트의 height와 동일하게 설정
+      />
+      <Image source={{uri: imageURL}} style={{...styles.image}} />
     </View>
   );
 }
@@ -27,9 +32,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   image: {
-    width: '100%',
-    height: '100%',
+    width: 410,
+    height: 240,
+    position: 'absolute',
     opacity: 0.75,
+    zIndex: 100,
   },
 });
 
